@@ -105,14 +105,15 @@ let sum_of_squares_of_two_largest a b c =
   
 (* B.3 *)
 
-  (* *)
-  (* 1. add_a generates a recursive processes because there is still 
-        more computation to be done after add_a is recursively called.
-        add_b generates an iterative processes because there are no 
-        pending operations after the recursive call, and thus the 
-        function can be tail call optimized. *)
+  (* B.3.1 *)
+  (* add_a generates a recursive processes because there is still 
+      more computation to be done after add_a is recursively called.
+      add_b generates an iterative processes because there are no 
+      pending operations after the recursive call, and thus the 
+      function can be tail call optimized. *)
   
-  (* 2. add_a substitution model evaluation
+  (* B.3.2 *)
+  (* add_a substitution model evaluation
   let rec add_a a b =
     if a = 0
       then b
@@ -151,6 +152,7 @@ let sum_of_squares_of_two_largest a b c =
           then 5 
           else inc (add_a (dec 2) 5)
     - Evaluate: if 2 = 0 then 5 else inc (add_a (dec 2) 5)
+      - if is a special form, so evaluate the first operand:
       - Evaluate 2 = 0
         - Evaluate 2 -> 2
         - Evaluate 0 -> 0
@@ -161,16 +163,219 @@ let sum_of_squares_of_two_largest a b c =
       - Evaluate: inc (add_a (dec 2) 5)
     - Evaluate: inc (add_a (dec 2) 5)
       - Evaluate (add_a (dec 2) 5)
-        - Evaluate 
-      - Evaluate inc -> 
+        - Evaluate dec 2
+          - Evaluate 2 -> 2
+          - Evaluate dec -> dec
+          - Apply dec to 2 -> 1
+        - Evaluate 5 -> 5
+        - Evaluate add_a -> 
+          fun a b -> if ...
+        - Apply add_a -> (fun a b -> ...) to 1, 5
+          - Substitute 1 for a and 5 for b in the fun expression to get:
+            ->if 1 = 0 
+                then 5 
+                else inc (add_a (dec 1) 5)
+          - Evaluate: if 1 = 0 then 5 else inc (add_a (dec 1) 5)
+            - if is a special form, so evaluate the first operand:
+            - Evaluate 1 = 0
+              - Evaluate 1 -> 1
+              - Evaluate 0 -> 0
+              - Evaluate = -> = 
+              - Apply = to 1, 0 -> false
+            - Since the expression is false, replace with the false clause:
+                inc (add_a (dec 1) 5)
+            - Evaluate: inc (add_a (dec 1) 5)
+          - Evaluate: inc (add_a (dec 1) 5)
+            - Evaluate (add_a (dec 1) 5)
+              - Evaluate dec 1
+                - Evaluate 1 -> 1
+                - Evaluate dec -> dec
+                - Apply dec to 1 -> 0
+              - Evaluate 5 -> 5
+              - Evaluate add_a -> 
+                fun a b -> if ...
+              - Apply add_a -> (fun a b -> ...) to 0, 5
+                - Substitute 0 for a and 5 for b in the fun expression to get:
+                  ->if 0 = 0 
+                      then 5 
+                      else inc (add_a (dec 0) 5)
+                - Evaluate: if 0 = 0 then 5 else inc (add_a (dec 0) 5)
+                  - if is a special form, so evaluate the first operand:
+                  - Evaluate 0 = 0
+                    - Evaluate 0 -> 0
+                    - Evaluate 0 -> 0
+                    - Evaluate = -> =
+                    - Apply = to 0, 0 -> true
+                  - Since the expression is true, replace with the true clause:
+                      5
+                  - Evaluate 5 -> 5
+                  - result: 5
+            - Evaluate inc -> inc
+            - Apply inc to 5 -> 6
+            - result: 6
+      - Evaluate inc -> inc
+      - Apply inc to 6 -> 7
+    - final result: 7
   *)
   
-  (* 3. *)
+  (* B.3.3 *)
+
+  (*
+  let rec add_b a b =
+    if a = 0
+      then b
+      else add_b (dec a) (inc b)
+
+  Desugar this to:
+
+  let rec add_b =
+    fun a b ->
+      if a = 0
+        then b
+        else add_b (dec a) (inc b)
+
+  >>> Create function fun a b -> if ...
+  Bind the name "add_b" to the value:
+
+    fun a b ->
+      if a = 0
+        then b
+        else add_b (dec a) (inc b)
+
+  Evaluate (add_b 2 5)
+    >>> evaluate 2 -> 2
+    >>> evaluate 5 -> 5
+    >>> evaluate add_b -> (fun a b -> if a = 0 then b else ...)
+    apply (fun a b -> if ...) to 2, 5
+    substitute 2 for a, 5 for b in (if ...)
+      -> if 2 = 0 then 5 else add_b (dec 2) (inc 5)
+    evaluate (if 2 = 0 then 5 else add_b (dec 2) (inc 5))
+      if is a special form, so evaluate the first operand:
+        evaluate (2 = 0)
+          >>> evaluate 2 -> 2
+          >>> evaluate 0 -> 0
+          >>> evaluate = -> =
+          apply = to 2, 0 -> false
+      first argument of if is false, so evaluate the third operand:
+        evaluate (add_b (dec 2) (inc 5))
+          evaluate (dec 2)
+            >>> evaluate 2 -> 2
+            >>> evaluate dec -> dec
+            apply dec to 2 -> 1
+          evaluate (inc 5)
+            >>> evaluate 5 -> 5
+            >>> evaluate inc -> inc
+            apply inc to 5 -> 6
+          apply (fun a b -> if ...) to 1, 6
+          substitute 1 for a, 6 for b in (if ...)
+            -> if 1 = 0 then 6 else add_b (dec 1) (inc 6)
+          evaluate (if 1 = 0 then 6 else add_b (dec 1) (inc 6))
+            if is a special form, so evaluate the first operand:
+              evaluate (1 = 0)
+                >>> evaluate 1 -> 1
+                >>> evaluate 0 -> 0
+                >>> evaluate = -> =
+                apply = to 1, 0 -> false
+            first argument of if is false, so evaluate the third operand:
+              evaluate (add_b (dec 1) (inc 6))
+                evaluate (dec 1)
+                  >>> evaluate 1 -> 1
+                  >>> evaluate dec -> dec
+                  apply dec to 1 -> 0
+                evaluate (inc 6)
+                  >>> evaluate 6 -> 6
+                  >>> evaluate inc -> inc
+                  apply inc to 6 -> 7
+                apply (fun a b -> if ...) to 0, 7
+                substitute 0 for a, 7 for b in (if ...)
+                  -> if 0 = 0 then 7 else add_b (dec 0) (inc 7)
+                evaluate (if 0 = 0 then 7 else add_b (dec 0) (inc 7))
+                  if is a special form, so evaluate the first operand:
+                    evaluate (0 = 0)
+                      >>> evaluate 0 -> 0
+                      >>> evaluate 0 -> 0
+                      >>> evaluate = -> =
+                      apply = to 0, 0 -> true
+                  first argument of if is true, so evaluate the second operand:
+                    >>> evaluate 7 -> 7
+                    result: 7
+  *)
 
 (* C.1 *)
 
+(* This function computes the factorial of the input number,
+   which for a number n is equal to n * (n-1) * ... * 1. *)
+let rec factorial n =
+  if n = 0 then 1 else n * factorial (n - 1)
+
+  (* C.1.a *)
+
+(* This function computes a particular term in the infinite 
+  series expansion of e. *)
+let e_term n =
+  if n < 0
+    then 0.0
+    else 1.0 /. (float_of_int (factorial n))
+
+  (* C.1.b *)
+
+let rec e_approximation n =
+  if n <= 0
+    then e_term 0
+    else (e_term n) +. e_approximation (n - 1)
+
+  (* C.1.c *)
+
+    (* Result from e_approximation 20: 
+        - : float = 2.71828182845904553 *)
+    (* Value of exp 1.0: 
+        - : float = 2.71828182845904509*)
+  
+  (* C.1.d *)
+    (* If we try to compute a better approximation of e by summing 
+       up to the 100th term we get: 
+       - : float = infinity
+      This happens because the factorial becomes so large that 
+      (factorial 100) simply returns 0. Then when 1.0 is divided by 
+      zero, it adds infinity to the sum and thus e_approximation of 
+      100 returns infinity.
+    *)
+
 (* C.2 *)
+
+let rec is_even n =
+  if n = 0 
+    then true
+    else is_odd (n - 1)
+and is_odd n = 
+  if n = 0
+    then false
+    else is_even (n - 1)
 
 (* C.3 *)
 
+let rec f_rec n = 
+  if n < 3
+    then n
+    else f_rec (n - 1) + 2 * f_rec (n - 2) + 3 * f_rec (n - 3)
+
+let rec f_iter_helper n current a b c =
+  if current + 2 >= n
+    then a
+    else f_iter_helper n (current + 1) (a + 2 * b + 3 * c) a b
+
+let f_iter n = 
+  if n < 3
+    then n
+    else f_iter_helper n 0 2 1 0
+
 (* C.4 *)         
+
+let rec pascal_coefficient row idx =  
+  match (row, idx) with
+    | (row', idx') when (row' < 1 || idx' < 1 || row' < idx') 
+      -> failwith "invalid arguments"
+    | (row', idx') when row' = idx' -> 1
+    | (_, 1) -> 1
+    | _ -> pascal_coefficient (row - 1) idx
+            + pascal_coefficient (row - 1) (idx - 1)
