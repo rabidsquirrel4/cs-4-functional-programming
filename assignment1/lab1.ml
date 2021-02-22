@@ -97,10 +97,11 @@ let sum_of_squares_of_two_largest a b c =
 (* B.2 *)
   
   (* When Alyssa attempts to use this to compute square roots, she will
-     get a type error. This is because guess is a float, while
-     (sqrt_iter (improve guess x) x) is a function. Even though the
-     function returns a float, the interpreter does not attempt to 
-     evaluate it and simply sees it as the wrong type. This is why 
+     observe infinite looping. This is because when the expression, 
+     "new_if a b", is evaluated using applicative order evaluation, the 
+     arguments a and b must be fully evaluated first. In the case 
+     of Alyssa's function, sqrt_iter is called recursively in the 
+     second argument of new_if, causing an infinite loop. This is why 
      if needs to be provided as a special syntactic form. *)
   
 (* B.3 *)
@@ -266,6 +267,7 @@ let sum_of_squares_of_two_largest a b c =
             >>> evaluate 5 -> 5
             >>> evaluate inc -> inc
             apply inc to 5 -> 6
+          evaluate add_b -> (fun a b -> if a = 0 then b else ...)
           apply (fun a b -> if ...) to 1, 6
           substitute 1 for a, 6 for b in (if ...)
             -> if 1 = 0 then 6 else add_b (dec 1) (inc 6)
@@ -286,6 +288,7 @@ let sum_of_squares_of_two_largest a b c =
                   >>> evaluate 6 -> 6
                   >>> evaluate inc -> inc
                   apply inc to 6 -> 7
+                evaluate add_b -> (fun a b -> if a = 0 then b else ...)
                 apply (fun a b -> if ...) to 0, 7
                 substitute 0 for a, 7 for b in (if ...)
                   -> if 0 = 0 then 7 else add_b (dec 0) (inc 7)

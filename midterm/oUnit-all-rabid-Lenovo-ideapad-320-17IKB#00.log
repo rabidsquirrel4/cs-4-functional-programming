@@ -1,0 +1,122 @@
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Runner: processes
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Chooser: simple
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Configuration suite_name = "all"
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Configuration cache_filename = "/home/rabid/rabidsquirrel4/cs-4-functional-programming/midterm/oUnit-$(suite_name).cache"
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Configuration run_gc_full_major = "true"
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Configuration display = "true"
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Configuration results_style_1_X = "false"
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Configuration testdata_dir = "none"
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Configuration health_check_interval = "1."
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Configuration verbose = "false"
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Configuration chooser = "simple"
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Configuration output_html_dir = "none"
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Configuration processes_kill_period = "5."
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Configuration runner = "processes"
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Configuration shards = "4"
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Configuration processes_grace_period = "5."
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Configuration log_encoding = "utf-8"
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Configuration output_junit_file = "none"
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Configuration ci = "false"
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Configuration output_file = "/home/rabid/rabidsquirrel4/cs-4-functional-programming/midterm/oUnit-$(suite_name)-$(shard_id).log"
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Using 4 workers maximum.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Starting worker number rabid-Lenovo-ideapad-320-17IKB#01.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Worker rabid-Lenovo-ideapad-320-17IKB#01 started.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Starting worker number rabid-Lenovo-ideapad-320-17IKB#02.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Worker rabid-Lenovo-ideapad-320-17IKB#02 started.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Starting worker number rabid-Lenovo-ideapad-320-17IKB#03.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Worker rabid-Lenovo-ideapad-320-17IKB#03 started.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Starting worker number rabid-Lenovo-ideapad-320-17IKB#04.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Worker rabid-Lenovo-ideapad-320-17IKB#04 started.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: 4 tests running: all:3:Problem A.4, all:2:Problem A.3, all:1:Problem A.2, all:0:Problem A.1.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: Start test all:0:Problem A.1.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#02 I: Start test all:1:Problem A.2.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#03 I: Start test all:2:Problem A.3.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: 4 tests running: all:3:Problem A.4, all:2:Problem A.3, all:1:Problem A.2, all:0:Problem A.1.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#04 I: Start test all:3:Problem A.4.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: 4 tests running: all:3:Problem A.4, all:2:Problem A.3, all:1:Problem A.2, all:0:Problem A.1.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: Test all:0:Problem A.1 is successful.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: 4 tests running: all:3:Problem A.4, all:2:Problem A.3, all:1:Problem A.2, all:0:Problem A.1.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: End test all:0:Problem A.1.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: 4 tests running: all:3:Problem A.4, all:2:Problem A.3, all:1:Problem A.2, all:0:Problem A.1.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: 4 tests running: all:4:Problem A.5, all:3:Problem A.4, all:2:Problem A.3, all:1:Problem A.2.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: Start test all:4:Problem A.5.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: 4 tests running: all:4:Problem A.5, all:3:Problem A.4, all:2:Problem A.3, all:1:Problem A.2.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#03 I: Test all:2:Problem A.3 is successful.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: 4 tests running: all:4:Problem A.5, all:3:Problem A.4, all:2:Problem A.3, all:1:Problem A.2.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#03 I: End test all:2:Problem A.3.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: 4 tests running: all:4:Problem A.5, all:3:Problem A.4, all:2:Problem A.3, all:1:Problem A.2.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: 4 tests running: all:5:Problem A.6, all:4:Problem A.5, all:3:Problem A.4, all:1:Problem A.2.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#03 I: Start test all:5:Problem A.6.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: 4 tests running: all:5:Problem A.6, all:4:Problem A.5, all:3:Problem A.4, all:1:Problem A.2.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#02 I: Test all:1:Problem A.2 is successful.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: 4 tests running: all:5:Problem A.6, all:4:Problem A.5, all:3:Problem A.4, all:1:Problem A.2.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#02 I: End test all:1:Problem A.2.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: 4 tests running: all:5:Problem A.6, all:4:Problem A.5, all:3:Problem A.4, all:1:Problem A.2.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: 4 tests running: all:6:Problem B.1: tree_search, all:5:Problem A.6, all:4:Problem A.5, all:3:Problem A.4.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#02 I: Start test all:6:Problem B.1: tree_search.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: 4 tests running: all:6:Problem B.1: tree_search, all:5:Problem A.6, all:4:Problem A.5, all:3:Problem A.4.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#04 I: Test all:3:Problem A.4 is successful.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: 4 tests running: all:6:Problem B.1: tree_search, all:5:Problem A.6, all:4:Problem A.5, all:3:Problem A.4.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#04 I: End test all:3:Problem A.4.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: Test all:4:Problem A.5 is successful.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: 4 tests running: all:6:Problem B.1: tree_search, all:5:Problem A.6, all:4:Problem A.5, all:3:Problem A.4.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: End test all:4:Problem A.5.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Still 4 tests running : all:7:Problem B.2: insert_helper, all:6:Problem B.1: tree_search, all:5:Problem A.6, all:4:Problem A.5.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: 4 tests running: all:7:Problem B.2: insert_helper, all:6:Problem B.1: tree_search, all:5:Problem A.6, all:4:Problem A.5.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#04 I: Start test all:7:Problem B.2: insert_helper.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Still 3 tests running : all:7:Problem B.2: insert_helper, all:6:Problem B.1: tree_search, all:5:Problem A.6.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: 3 tests running: all:7:Problem B.2: insert_helper, all:6:Problem B.1: tree_search, all:5:Problem A.6.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#03 I: Test all:5:Problem A.6 is successful.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Still 3 tests running : all:7:Problem B.2: insert_helper, all:6:Problem B.1: tree_search, all:5:Problem A.6.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: 3 tests running: all:7:Problem B.2: insert_helper, all:6:Problem B.1: tree_search, all:5:Problem A.6.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#03 I: End test all:5:Problem A.6.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Still 3 tests running : all:7:Problem B.2: insert_helper, all:6:Problem B.1: tree_search, all:5:Problem A.6.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: 3 tests running: all:7:Problem B.2: insert_helper, all:6:Problem B.1: tree_search, all:5:Problem A.6.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Still 2 tests running : all:7:Problem B.2: insert_helper, all:6:Problem B.1: tree_search.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: 2 tests running: all:7:Problem B.2: insert_helper, all:6:Problem B.1: tree_search.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#02 I: Test all:6:Problem B.1: tree_search is successful.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Still 2 tests running : all:7:Problem B.2: insert_helper, all:6:Problem B.1: tree_search.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: 2 tests running: all:7:Problem B.2: insert_helper, all:6:Problem B.1: tree_search.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#02 I: End test all:6:Problem B.1: tree_search.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Still 2 tests running : all:7:Problem B.2: insert_helper, all:6:Problem B.1: tree_search.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: 2 tests running: all:7:Problem B.2: insert_helper, all:6:Problem B.1: tree_search.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Still 1 tests running : all:7:Problem B.2: insert_helper.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: 1 tests running: all:7:Problem B.2: insert_helper.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#04 I: Test all:7:Problem B.2: insert_helper is successful.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Still 1 tests running : all:7:Problem B.2: insert_helper.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: 1 tests running: all:7:Problem B.2: insert_helper.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#04 I: End test all:7:Problem B.2: insert_helper.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Still 1 tests running : all:7:Problem B.2: insert_helper.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: 1 tests running: all:7:Problem B.2: insert_helper.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: 0 tests running: .
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Worker rabid-Lenovo-ideapad-320-17IKB#01 has ended.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Worker rabid-Lenovo-ideapad-320-17IKB#03 has ended.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Worker rabid-Lenovo-ideapad-320-17IKB#02 has ended.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Worker rabid-Lenovo-ideapad-320-17IKB#04 has ended.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Used 4 worker during test execution.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Run 2 tests with shard rabid-Lenovo-ideapad-320-17IKB#04.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Run 2 tests with shard rabid-Lenovo-ideapad-320-17IKB#01.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Run 2 tests with shard rabid-Lenovo-ideapad-320-17IKB#02.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Run 2 tests with shard rabid-Lenovo-ideapad-320-17IKB#03.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Check health of shard rabid-Lenovo-ideapad-320-17IKB#04, 1 times.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Check health of shard rabid-Lenovo-ideapad-320-17IKB#01, 10 times.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Check health of shard rabid-Lenovo-ideapad-320-17IKB#03, 7 times.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Check health of shard rabid-Lenovo-ideapad-320-17IKB#02, 4 times.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: ==============
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Summary:
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Test all:7:Problem B.2: insert_helper is successful.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Test all:6:Problem B.1: tree_search is successful.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Test all:5:Problem A.6 is successful.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Test all:4:Problem A.5 is successful.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Test all:3:Problem A.4 is successful.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Test all:1:Problem A.2 is successful.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Test all:2:Problem A.3 is successful.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Test all:0:Problem A.1 is successful.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Ran: 8 tests in: 0.11 seconds.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Cases: 8.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Tried: 8.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Errors: 0.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Failures: 0.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Skip: 0.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Todo: 0.
+2021-02-21T08:32:38+00:00 rabid-Lenovo-ideapad-320-17IKB#00 I: Timeout: 0.

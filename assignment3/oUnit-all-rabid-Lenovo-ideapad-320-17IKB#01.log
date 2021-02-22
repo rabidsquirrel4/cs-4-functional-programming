@@ -1,0 +1,15 @@
+2021-02-15T22:24:00+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: Start test all:0:last_sublist.
+2021-02-15T22:24:00+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: Test all:0:last_sublist is successful.
+2021-02-15T22:24:00+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: End test all:0:last_sublist.
+2021-02-15T22:24:00+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: Start test all:4:count_negative_numbers.
+2021-02-15T22:24:00+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: Test all:4:count_negative_numbers is successful.
+2021-02-15T22:24:00+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: End test all:4:count_negative_numbers.
+2021-02-15T22:24:00+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: Start test all:8:deep_reverse_nested.
+2021-02-15T22:24:00+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: Test all:8:deep_reverse_nested is successful.
+2021-02-15T22:24:00+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: End test all:8:deep_reverse_nested.
+2021-02-15T22:24:00+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: Start test all:10:insertion_sort.
+2021-02-15T22:24:00+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: Test all:10:insertion_sort is successful.
+2021-02-15T22:24:00+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: End test all:10:insertion_sort.
+2021-02-15T22:24:00+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: Start test all:14:dot_product, matrix_times_vector, matrix_times_matrix.
+2021-02-15T22:24:00+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: Test all:14:dot_product, matrix_times_vector, matrix_times_matrix is successful.
+2021-02-15T22:24:00+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: End test all:14:dot_product, matrix_times_vector, matrix_times_matrix.

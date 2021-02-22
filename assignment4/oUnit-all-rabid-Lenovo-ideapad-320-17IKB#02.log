@@ -1,0 +1,15 @@
+2021-02-12T08:07:13+00:00 rabid-Lenovo-ideapad-320-17IKB#02 I: Start test all:1:make_segment/get_points.
+2021-02-12T08:07:13+00:00 rabid-Lenovo-ideapad-320-17IKB#02 I: Test all:1:make_segment/get_points is successful.
+2021-02-12T08:07:13+00:00 rabid-Lenovo-ideapad-320-17IKB#02 I: End test all:1:make_segment/get_points.
+2021-02-12T08:07:13+00:00 rabid-Lenovo-ideapad-320-17IKB#02 I: Start test all:5:make_rectangle2.
+2021-02-12T08:07:13+00:00 rabid-Lenovo-ideapad-320-17IKB#02 I: Test all:5:make_rectangle2 is successful.
+2021-02-12T08:07:13+00:00 rabid-Lenovo-ideapad-320-17IKB#02 I: End test all:5:make_rectangle2.
+2021-02-12T08:07:13+00:00 rabid-Lenovo-ideapad-320-17IKB#02 I: Start test all:9:is_balanced, total_weight1, total_weight2.
+2021-02-12T08:07:13+00:00 rabid-Lenovo-ideapad-320-17IKB#02 I: Test all:9:is_balanced, total_weight1, total_weight2 is successful.
+2021-02-12T08:07:13+00:00 rabid-Lenovo-ideapad-320-17IKB#02 I: End test all:9:is_balanced, total_weight1, total_weight2.
+2021-02-12T08:07:13+00:00 rabid-Lenovo-ideapad-320-17IKB#02 I: Start test all:12:square_tree''.
+2021-02-12T08:07:13+00:00 rabid-Lenovo-ideapad-320-17IKB#02 I: Test all:12:square_tree'' is successful.
+2021-02-12T08:07:13+00:00 rabid-Lenovo-ideapad-320-17IKB#02 I: End test all:12:square_tree''.
+2021-02-12T08:07:13+00:00 rabid-Lenovo-ideapad-320-17IKB#02 I: Start test all:14:derivative.
+2021-02-12T08:07:13+00:00 rabid-Lenovo-ideapad-320-17IKB#02 I: Test all:14:derivative is successful.
+2021-02-12T08:07:13+00:00 rabid-Lenovo-ideapad-320-17IKB#02 I: End test all:14:derivative.

@@ -1,0 +1,9 @@
+2021-02-12T08:07:13+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: Start test all:0:make_point/get_coords.
+2021-02-12T08:07:13+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: Test all:0:make_point/get_coords is successful.
+2021-02-12T08:07:13+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: End test all:0:make_point/get_coords.
+2021-02-12T08:07:13+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: Start test all:4:make_rectangle.
+2021-02-12T08:07:13+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: Test all:4:make_rectangle is successful.
+2021-02-12T08:07:13+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: End test all:4:make_rectangle.
+2021-02-12T08:07:13+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: Start test all:8:unary integers 2.
+2021-02-12T08:07:13+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: Test all:8:unary integers 2 is successful.
+2021-02-12T08:07:13+00:00 rabid-Lenovo-ideapad-320-17IKB#01 I: End test all:8:unary integers 2.
